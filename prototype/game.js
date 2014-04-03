@@ -201,7 +201,7 @@ function mouseClickHandler(event)
 			mx <= towers[i].x+64 &&
 			my >= towers[i].y &&
 			my <= towers[i].y+64 &&
-			wasGameRenderCalled == true)
+			wasGameRenderCalled)
 		{
 			towers[i].changeStatus();
 

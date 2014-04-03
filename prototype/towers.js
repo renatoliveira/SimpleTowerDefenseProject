@@ -9,6 +9,7 @@ function Tower(x, y, o, identification)
 	this.shootCost     = 50;
 	this.isSelected    = false;
 	this.objectName    = 'torre ' + this.towerNumber;
+	this.isUpgradeable = true;
 
 	var currentFrame = 0;
 	var numFrames    = 5;
