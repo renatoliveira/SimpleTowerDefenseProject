@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Limelight|Flamenco|Federo|Yesteryear|Josefin Sans|Spinnaker|Sansita One|Handlee|Droid Sans|Oswald:400,300,700" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/common.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/fontawesome.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/project.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/demo.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+-->
+    <title>demo</title>
+  </head>
+  
+  <body onmousedown="mouseClickHandler(event)"
+      onmousemove="mouseOverHandler(event)">
+    <!-- <div id="container"></div> -->
+    <script src="button.js"></script>
+    <script src="enemy.js"></script>
+    <script src="bar.js"></script>
+    <script src="audio.js"></script>
+    <script src="collider.js"></script>
+    <script src="laser.js"></script>
+    <script src="towers.js"></script>
+    <div id="page-wrapper">
+      <div id="absolute-wrapper">
+        <div class="rectangle rectangle-1">
+          <div id="container"></div>
+          <button class="btn" id="btn-up">↑</button>
+          <button class="btn" id="btn-left">←</button>
+          <button class="btn" id="btn-right">→</button>
+          <button class="btn" id="btn-down">↓</button>
+        </div>
+        <div class="rectangle rectangle-2">
+          <h1 class="dom-heading">A game by
+            <br>Gabriel Magalhães and Renato Oliveira</h1>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+  <!-- Page made at Easel.io -->
+</html>

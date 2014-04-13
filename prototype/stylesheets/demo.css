@@ -1,0 +1,111 @@
+html {
+  background-color: #2e3d46;
+}
+body {
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+}
+#page-wrapper {
+  position: relative;
+  width: 1280px;
+  /* centers the document */
+  margin: 0 auto;
+  /*
+  hides anything drawn off canvas.
+  remove overflow and height to see things drawn off canvas.
+  */
+  overflow: hidden;
+  height: 1000px;
+}
+/* This makes absolutely positioned elements like p, h1,
+     and some bootstrap elements placed properly. */
+ #absolute-wrapper p, #absolute-wrapper h1, #absolute-wrapper h2, #absolute-wrapper h3, #absolute-wrapper h4, #absolute-wrapper h5, #absolute-wrapper h6 {
+  margin-top: 0 !important;
+}
+/* Set floating dom-heading margins to 0 */
+[class*="dom-heading"] {
+  margin: 0;
+}
+#absolute-wrapper {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+  height: 1px;
+}
+#absolute-wrapper .rectangle {
+  border-radius: 0px;
+  border: none;
+  position: absolute;
+}
+#absolute-wrapper .rectangle.rectangle-1 {
+  background: #00375b;
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 55, 91, 0.701961);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 55, 91, 0.701961);
+  -o-box-shadow: 0px 0px 10px 0px rgba(0, 55, 91, 0.701961);
+  box-shadow: 0px 0px 10px 0px rgba(0, 55, 91, 0.701961);
+  width: 960px;
+  height: 1000px;
+  top: 0px;
+  left: 160px;
+}
+#container {
+  width: 840px;
+  height: 640px;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+#btn-up {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 720px;
+  left: 460px;
+}
+#btn-left {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 770px;
+  left: 410px;
+}
+#btn-right {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 770px;
+  left: 510px;
+}
+#btn-down {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 771px;
+  left: 460px;
+}
+#absolute-wrapper .rectangle.rectangle-2 {
+  background: #1c1c1c;
+  -moz-box-shadow: 5px 0px 10px 0px rgba(29, 29, 29, 0.701961);
+  -webkit-box-shadow: 5px 0px 10px 0px rgba(29, 29, 29, 0.701961);
+  -o-box-shadow: 5px 0px 10px 0px rgba(29, 29, 29, 0.701961);
+  box-shadow: 5px 0px 10px 0px rgba(29, 29, 29, 0.701961);
+  width: 1280px;
+  height: 64px;
+  top: 936px;
+  left: 0px;
+}
+#absolute-wrapper .rectangle.rectangle-2 .dom-heading {
+  font-family: Arial;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1;
+  color: #aaaaaa;
+  text-shadow: #000000 0px 1px 2px;
+  width: 280px;
+  height: 40px;
+  position: absolute;
+  top: 15px;
+  left: 500px;
+}

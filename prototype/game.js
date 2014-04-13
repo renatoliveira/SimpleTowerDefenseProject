@@ -511,6 +511,8 @@ function clearScreen(){
 	canvas.towersContext.clearRect(0,0,SCREEN_W, SCREEN_H);
 	canvas.lasersContext.clearRect(0,0,SCREEN_W,SCREEN_H);
 	canvas.gameInterfaceContext.clearRect(0,0,840,640);
+
+	printCanvasInfo();
 }
 
 function encerraGame(){
@@ -563,6 +565,10 @@ canvas.droidsContext.strokeStyle        = 'blue';
 canvas.towersContext.strokeStyle        = 'white';
 canvas.gameInterfaceContext.strokeStyle = 'white';
 canvas.gameInterfaceContext.font        = '15pt Calibri';
+
+function printCanvasInfo () {
+	console.log(canvas.enemies.x);
+}
 
 document.getElementById('container').appendChild(canvas.paths);
 document.getElementById('container').appendChild(canvas.enemies);
